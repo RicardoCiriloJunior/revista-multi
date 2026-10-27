@@ -1,0 +1,356 @@
+[
+  {
+    "nodeId": "47:17",
+    "name": "imgRetratoJosueDeCastro",
+    "url": "https://www.figma.com/api/mcp/asset/0b6bfb30-6825-4923-9ad7-8cb54afb2db2/fd1a3.png",
+    "file": "public/assets/figma/156-933-fd1a3.png"
+  },
+  {
+    "nodeId": "47:17",
+    "name": "imgRetratoAmartyaSen",
+    "url": "https://www.figma.com/api/mcp/asset/0b6bfb30-6825-4923-9ad7-8cb54afb2db2/29bcd.png",
+    "file": "public/assets/figma/156-933-29bcd.png"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgFoto04",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/3abfc.png",
+    "file": "public/assets/figma/75-51-3abfc.png"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgFoto03",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/b78d8.png",
+    "file": "public/assets/figma/75-51-b78d8.png"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgFoto02",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/46230.png",
+    "file": "public/assets/figma/75-51-46230.png"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgFoto01",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/5ef84.png",
+    "file": "public/assets/figma/75-51-5ef84.png"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgIndicadorDaFotoAtual",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/9fb97.svg",
+    "file": "public/assets/figma/75-51-9fb97.svg"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgIndicadorDaFotoAtual1",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/10266.svg",
+    "file": "public/assets/figma/75-51-10266.svg"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgIndicadorDaFotoAtual2",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/a64c1.svg",
+    "file": "public/assets/figma/75-51-a64c1.svg"
+  },
+  {
+    "nodeId": "75:51",
+    "name": "imgIndicadorDaFotoAtual3",
+    "url": "https://www.figma.com/api/mcp/asset/bd0386be-68ea-4acb-8a71-5269cb9c7984/b9aaa.svg",
+    "file": "public/assets/figma/75-51-b9aaa.svg"
+  },
+  {
+    "nodeId": "503:353",
+    "name": "imgAmazonia",
+    "url": "https://www.figma.com/api/mcp/asset/74d58090-f232-4ac8-ae1e-18c9cb6dfb66/1d416.png",
+    "file": "public/assets/figma/156-747-1d416.png"
+  },
+  {
+    "nodeId": "503:353",
+    "name": "imgImage3",
+    "url": "https://www.figma.com/api/mcp/asset/74d58090-f232-4ac8-ae1e-18c9cb6dfb66/80679.png",
+    "file": "public/assets/figma/156-747-80679.png"
+  },
+  {
+    "nodeId": "503:353",
+    "name": "img00Capa",
+    "url": "https://www.figma.com/api/mcp/asset/74d58090-f232-4ac8-ae1e-18c9cb6dfb66/d6d99.svg",
+    "file": "public/assets/figma/156-747-d6d99.svg"
+  },
+  {
+    "nodeId": "503:365",
+    "name": "img02Sumario",
+    "url": "https://www.figma.com/api/mcp/asset/489292f8-3d5c-4812-aa50-1a5b38135c74/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:365",
+    "name": "imgVector",
+    "url": "https://www.figma.com/api/mcp/asset/489292f8-3d5c-4812-aa50-1a5b38135c74/b43ed.svg",
+    "file": "public/assets/figma/156-772-b43ed.svg"
+  },
+  {
+    "nodeId": "503:365",
+    "name": "imgVector1",
+    "url": "https://www.figma.com/api/mcp/asset/489292f8-3d5c-4812-aa50-1a5b38135c74/817dd.svg",
+    "file": "public/assets/figma/156-772-817dd.svg"
+  },
+  {
+    "nodeId": "503:511",
+    "name": "img03EditorialFomeNoBrasilENoNorte",
+    "url": "https://www.figma.com/api/mcp/asset/15365fc0-8477-4363-b4c5-34f6d0d58f34/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:520",
+    "name": "img04OQueEInsegurancaAlimentar",
+    "url": "https://www.figma.com/api/mcp/asset/3adcf1c8-740f-4f14-8ba8-1150f15284de/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:540",
+    "name": "imgRetratoJosueDeCastro",
+    "url": "https://www.figma.com/api/mcp/asset/41ce6851-7682-4281-bae6-bb3fbafb4341/fd1a3.png",
+    "file": "public/assets/figma/156-933-fd1a3.png"
+  },
+  {
+    "nodeId": "503:540",
+    "name": "imgRetratoAmartyaSen",
+    "url": "https://www.figma.com/api/mcp/asset/41ce6851-7682-4281-bae6-bb3fbafb4341/29bcd.png",
+    "file": "public/assets/figma/156-933-29bcd.png"
+  },
+  {
+    "nodeId": "503:540",
+    "name": "img05JosueDeCastroEAmartyaSen",
+    "url": "https://www.figma.com/api/mcp/asset/41ce6851-7682-4281-bae6-bb3fbafb4341/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:550",
+    "name": "img06HistoriaDaFomeEDireitoAAlimentacao",
+    "url": "https://www.figma.com/api/mcp/asset/cd638421-d1ac-40e4-a6b5-3881e284a34f/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:550",
+    "name": "imgVector",
+    "url": "https://www.figma.com/api/mcp/asset/cd638421-d1ac-40e4-a6b5-3881e284a34f/450b7.svg",
+    "file": "public/assets/figma/156-943-450b7.svg"
+  },
+  {
+    "nodeId": "503:576",
+    "name": "img07InsegurancaAlimentarNoBrasil",
+    "url": "https://www.figma.com/api/mcp/asset/8b37021f-d2f2-4c5f-817e-d9fc7146a5e5/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:586",
+    "name": "img08EvolucaoDaInsegurancaAlimentar",
+    "url": "https://www.figma.com/api/mcp/asset/27ba27a5-c494-468d-acf5-5ec18f0cd330/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:599",
+    "name": "img09InsegurancaAlimentarGravePorRegiao",
+    "url": "https://www.figma.com/api/mcp/asset/2ba36a14-ca16-4153-95cc-8fcd26cfed64/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:637",
+    "name": "img10NorteSituacaoEEvolucao",
+    "url": "https://www.figma.com/api/mcp/asset/3ddcdfc6-29f7-4959-a404-37eb0ad5d2ac/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:752",
+    "name": "img11NorteNiveisDeInseguranca",
+    "url": "https://www.figma.com/api/mcp/asset/dd1c1708-cfee-4749-9aba-f6b7c7ffff9b/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:752",
+    "name": "imgLinhaDaSerieLeve",
+    "url": "https://www.figma.com/api/mcp/asset/dd1c1708-cfee-4749-9aba-f6b7c7ffff9b/89bd0.svg",
+    "file": "public/assets/figma/503-752-89bd0.svg"
+  },
+  {
+    "nodeId": "503:752",
+    "name": "imgLinhaDaSerieModerada",
+    "url": "https://www.figma.com/api/mcp/asset/dd1c1708-cfee-4749-9aba-f6b7c7ffff9b/c35bb.svg",
+    "file": "public/assets/figma/503-752-c35bb.svg"
+  },
+  {
+    "nodeId": "503:752",
+    "name": "imgLinhaDaSerieGrave",
+    "url": "https://www.figma.com/api/mcp/asset/dd1c1708-cfee-4749-9aba-f6b7c7ffff9b/b34ef.svg",
+    "file": "public/assets/figma/503-752-b34ef.svg"
+  },
+  {
+    "nodeId": "503:752",
+    "name": "imgPontoLeve2004",
+    "url": "https://www.figma.com/api/mcp/asset/dd1c1708-cfee-4749-9aba-f6b7c7ffff9b/8b526.svg",
+    "file": "public/assets/figma/503-752-8b526.svg"
+  },
+  {
+    "nodeId": "503:752",
+    "name": "imgPontoModerada2004",
+    "url": "https://www.figma.com/api/mcp/asset/dd1c1708-cfee-4749-9aba-f6b7c7ffff9b/32692.svg",
+    "file": "public/assets/figma/503-752-32692.svg"
+  },
+  {
+    "nodeId": "503:752",
+    "name": "imgPontoGrave2004",
+    "url": "https://www.figma.com/api/mcp/asset/dd1c1708-cfee-4749-9aba-f6b7c7ffff9b/76503.svg",
+    "file": "public/assets/figma/503-752-76503.svg"
+  },
+  {
+    "nodeId": "503:926",
+    "name": "img12RendaGeneroERaca",
+    "url": "https://www.figma.com/api/mcp/asset/51c9fcb7-198f-43c7-ac74-d19895c19ece/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:955",
+    "name": "img13InsegurancaAlimentarNoCampoENaCidade",
+    "url": "https://www.figma.com/api/mcp/asset/26923dfb-aba1-4bb8-b50e-6b8395401e94/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:970",
+    "name": "img14EconomiaEDesigualdadeNoNorte",
+    "url": "https://www.figma.com/api/mcp/asset/2b10070c-65d0-464e-9a3a-eb37765c7957/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:997",
+    "name": "imgImage1",
+    "url": "https://www.figma.com/api/mcp/asset/297acd93-345b-4402-8fa1-b31fcfbd8540/d8a35.png",
+    "file": "public/assets/figma/156-1048-d8a35.png"
+  },
+  {
+    "nodeId": "503:997",
+    "name": "img15ProducaoComunitariaEBioeconomia",
+    "url": "https://www.figma.com/api/mcp/asset/297acd93-345b-4402-8fa1-b31fcfbd8540/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:1009",
+    "name": "imgFotografiaNavegacaoNoLagoCabaliana",
+    "url": "https://www.figma.com/api/mcp/asset/c88c64ec-8494-41c5-8db7-407a9367ba1d/2b1d6.png",
+    "file": "public/assets/figma/156-1060-2b1d6.png"
+  },
+  {
+    "nodeId": "503:1009",
+    "name": "img16TransporteEAbastecimentoNoNorte",
+    "url": "https://www.figma.com/api/mcp/asset/c88c64ec-8494-41c5-8db7-407a9367ba1d/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:1009",
+    "name": "imgVector",
+    "url": "https://www.figma.com/api/mcp/asset/c88c64ec-8494-41c5-8db7-407a9367ba1d/03e35.svg",
+    "file": "public/assets/figma/156-1060-03e35.svg"
+  },
+  {
+    "nodeId": "503:1051",
+    "name": "imgFotografiaSecaDoRioSolimoes",
+    "url": "https://www.figma.com/api/mcp/asset/967c7ee8-6353-4c96-834f-837e1506363c/1426a.png",
+    "file": "public/assets/figma/503-1051-1426a.png"
+  },
+  {
+    "nodeId": "503:1051",
+    "name": "img17SecasEAcessoAAlimentacao",
+    "url": "https://www.figma.com/api/mcp/asset/967c7ee8-6353-4c96-834f-837e1506363c/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:1051",
+    "name": "imgVector",
+    "url": "https://www.figma.com/api/mcp/asset/967c7ee8-6353-4c96-834f-837e1506363c/0e898.svg",
+    "file": "public/assets/figma/503-1051-0e898.svg"
+  },
+  {
+    "nodeId": "503:1072",
+    "name": "img18DepoimentosSobreAInsegurancaAlimentar",
+    "url": "https://www.figma.com/api/mcp/asset/7dbefcb7-d5dd-4c89-9dee-fa8dc412b723/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:1091",
+    "name": "img19AlimentacaoEIdentidadeCultural",
+    "url": "https://www.figma.com/api/mcp/asset/bb4c6473-84a2-40ae-9708-697b515f4754/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "503:1102",
+    "name": "imgFotografiaMercadoDeAcaiEmBelem",
+    "url": "https://www.figma.com/api/mcp/asset/aaa77ff3-25d6-4daa-8253-fad6e2d3d6cd/c6b65.png",
+    "file": "public/assets/figma/503-1102-c6b65.png"
+  },
+  {
+    "nodeId": "503:1102",
+    "name": "imgVector",
+    "url": "https://www.figma.com/api/mcp/asset/aaa77ff3-25d6-4daa-8253-fad6e2d3d6cd/53467.svg",
+    "file": "public/assets/figma/503-1102-53467.svg"
+  },
+  {
+    "nodeId": "503:1115",
+    "name": "imgGroup",
+    "url": "https://www.figma.com/api/mcp/asset/32c3811e-38b5-4cb3-a6b3-4144b4a8094d/c143b.svg",
+    "file": "public/assets/figma/156-1130-c143b.svg"
+  },
+  {
+    "nodeId": "503:1115",
+    "name": "imgGroup1",
+    "url": "https://www.figma.com/api/mcp/asset/32c3811e-38b5-4cb3-a6b3-4144b4a8094d/1efc5.svg",
+    "file": "public/assets/figma/156-1130-1efc5.svg"
+  },
+  {
+    "nodeId": "503:1115",
+    "name": "imgGroup2",
+    "url": "https://www.figma.com/api/mcp/asset/32c3811e-38b5-4cb3-a6b3-4144b4a8094d/763ec.svg",
+    "file": "public/assets/figma/156-1130-763ec.svg"
+  },
+  {
+    "nodeId": "503:1115",
+    "name": "img21PoliticasDeCombateAFome",
+    "url": "https://www.figma.com/api/mcp/asset/32c3811e-38b5-4cb3-a6b3-4144b4a8094d/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "517:527",
+    "name": "imgCarrosselAutomatico4Fotos3Segundos",
+    "url": "https://www.figma.com/api/mcp/asset/add177d3-450d-4142-96b3-965a1b17932e/5ef84.png",
+    "file": "public/assets/figma/75-51-5ef84.png"
+  },
+  {
+    "nodeId": "517:527",
+    "name": "imgFoto02",
+    "url": "https://www.figma.com/api/mcp/asset/add177d3-450d-4142-96b3-965a1b17932e/46230.png",
+    "file": "public/assets/figma/75-51-46230.png"
+  },
+  {
+    "nodeId": "517:527",
+    "name": "imgFoto03",
+    "url": "https://www.figma.com/api/mcp/asset/add177d3-450d-4142-96b3-965a1b17932e/b78d8.png",
+    "file": "public/assets/figma/75-51-b78d8.png"
+  },
+  {
+    "nodeId": "517:527",
+    "name": "imgFoto04",
+    "url": "https://www.figma.com/api/mcp/asset/add177d3-450d-4142-96b3-965a1b17932e/3abfc.png",
+    "file": "public/assets/figma/75-51-3abfc.png"
+  },
+  {
+    "nodeId": "517:527",
+    "name": "img22FontesECreditos",
+    "url": "https://www.figma.com/api/mcp/asset/add177d3-450d-4142-96b3-965a1b17932e/e6ce3.svg",
+    "file": "public/assets/figma/196-739-e6ce3.svg"
+  },
+  {
+    "nodeId": "517:527",
+    "name": "imgIndicadorDaFotoAtual",
+    "url": "https://www.figma.com/api/mcp/asset/add177d3-450d-4142-96b3-965a1b17932e/9fb97.svg",
+    "file": "public/assets/figma/75-51-9fb97.svg"
+  }
+]

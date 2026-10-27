@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Indicador da foto atual" clip-path="url(#clip0_0_9)">
+<circle id="Indicador 1" cx="4" cy="4" r="4" fill="#C9CDBB"/>
+<circle id="Indicador 2" cx="20" cy="4" r="4" fill="#153B2E"/>
+<circle id="Indicador 3" cx="36" cy="4" r="4" fill="#C9CDBB"/>
+<circle id="Indicador 4" cx="52" cy="4" r="4" fill="#C9CDBB"/>
+</g>
+<defs>
+<clipPath id="clip0_0_9">
+<rect width="56" height="8" fill="white"/>
+</clipPath>
+</defs>
+</svg>

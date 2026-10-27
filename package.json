@@ -1,0 +1,22 @@
+{
+  "name": "revista-terra-rica-prato-pobre",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "prepare:figma": "node scripts/prepare-figma.mjs",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "verify:content": "node scripts/verify-source-text.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "rolldown": "1.2.15",
+    "vite": "8.3.5"
+  }
+}
