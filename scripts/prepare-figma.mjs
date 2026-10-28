@@ -11,6 +11,8 @@ const css = [];
 const classes = new Map();
 const assets = [];
 const pages = [];
+const chartTertiary = '#063652';
+const runtimeAssetSources = new Set();
 const previousAssets = JSON.parse(fs.readFileSync('design/assets-manifest.json', 'utf8'));
 const knownAssets = new Map(previousAssets.map(asset => [new URL(asset.url).pathname.split('/').pop(), asset.file]));
 
@@ -90,7 +92,15 @@ function convert(code, id) {
     const file = knownAssets.get(asset) || `public/assets/figma/${id.replace(':', '-')}-${asset}`;
     knownAssets.set(asset, file);
     assets.push({ nodeId: id, name, url: `${prefix}/${asset}`, file });
-    return `const ${name} = ${JSON.stringify('/' + file.replace(/^public\//, ''))};`;
+    let runtimeFile = file;
+    if (id === '503:752' && ['imgLinhaDaSerieLeve', 'imgPontoLeve2004'].includes(name)) {
+      // Keep the original SVG and recolor only its tertiary series for the site.
+      runtimeFile = file.replace(/\.svg$/, '-tertiary.svg');
+      fs.writeFileSync(runtimeFile, fs.readFileSync(file, 'utf8').replace(/#1d466b/gi, chartTertiary));
+    }
+    const runtimeSource = '/' + runtimeFile.replace(/^public\//, '');
+    runtimeAssetSources.add(runtimeSource);
+    return `const ${name} = ${JSON.stringify(runtimeSource)};`;
   }).replace(/const assetPathPrefix = .*?;\n/, '');
   code = code.replace(/className="([^"]*)"/g, (_, v) => `className="${localClass(v)}"`);
   code = code.replace(/className=\{className \|\| "([^"]*)"\}/g, (_, v) => `className={className || "${localClass(v)}"}`);
@@ -154,6 +164,13 @@ for (const [id, filename, name] of shared) {
   // Figma attaches the same action to a button and its text. On the web the
   // native outer button supplies one keyboard target while retaining all text.
   if (filename === 'Voices') reference = reference.replaceAll(' role="button"', '').replaceAll(' tabIndex="0"', '');
+  if (filename === 'Evolution') {
+    reference = reference.replaceAll('--margem-cor-lima,#d5e74e', `--chart-tertiary,${chartTertiary}`);
+    // Light labels retain their contrast on the new dark blue segments.
+    for (const labelId of [777, 785, 793, 801, 809, 817, 825, 833]) {
+      reference = replaceNode(reference, `265:${labelId}`, (_, block) => block.replaceAll('text-[color:var(--margem-cor-verde,#153b2e)]', 'text-[color:var(--margem-cor-papel,#f2efdf)]'));
+    }
+  }
   let code = convert(reference, id.replace('-', ':'));
   if (!code.includes('export default')) code += `\nexport default ${name};\n`;
   fs.writeFileSync(`src/figma-components/${filename}.tsx`, `import React from 'react';\n\n${code}\n`);
@@ -174,6 +191,8 @@ fs.writeFileSync('src/interaction-data.mjs', `// Exact variable assignments read
 const sourceMap = JSON.parse(fs.readFileSync('design/source-map.json', 'utf8'));
 for (const data of sourceMap) {
   let code = normalizePageRoot(source(data.source));
+  if (data.id === '196:760') code = code.replaceAll('#1d466b', `var(--chart-tertiary,${chartTertiary})`);
+  if (data.id === '156:1021') code = code.replaceAll('bg-[var(--margem-cor-cinza,#67786b)]', `bg-[var(--chart-tertiary,${chartTertiary})]`);
   // These unchanged layouts were reused from the first extraction. The new
   // file's text-layer audit confirms its bibliography calls now say page 22.
   if (['156:933', '156:943', '156:1021'].includes(data.id)) code = code.replaceAll('Referências completas na p. 23.', 'Referências completas na p. 22.');
@@ -215,5 +234,5 @@ for (const data of sourceMap) {
 fs.writeFileSync('src/figma.css', css.join('\n') + '\n');
 fs.writeFileSync('design/assets-manifest.json', JSON.stringify(assets, null, 2) + '\n');
 fs.writeFileSync('design/pages-imported.json', JSON.stringify(pages, null, 2) + '\n');
-fs.writeFileSync('src/assets.mjs', `export const imageSources = ${JSON.stringify([...new Set(assets.map(asset => '/' + asset.file.replace(/^public\//, '')))], null, 2)};\n`);
+fs.writeFileSync('src/assets.mjs', `export const imageSources = ${JSON.stringify([...runtimeAssetSources], null, 2)};\n`);
 console.log(`Prepared ${pages.length} pages, ${assets.length} original assets, ${classes.size} CSS rules.`);

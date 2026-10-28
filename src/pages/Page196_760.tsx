@@ -1,10 +1,10 @@
 import React from 'react';
 
 const img11NorteNiveisDeInseguranca = "/assets/figma/196-739-e6ce3.svg";
-const imgLinhaDaSerieLeve = "/assets/figma/503-752-89bd0.svg";
+const imgLinhaDaSerieLeve = "/assets/figma/503-752-89bd0-tertiary.svg";
 const imgLinhaDaSerieModerada = "/assets/figma/503-752-c35bb.svg";
 const imgLinhaDaSerieGrave = "/assets/figma/503-752-b34ef.svg";
-const imgPontoLeve2004 = "/assets/figma/503-752-8b526.svg";
+const imgPontoLeve2004 = "/assets/figma/503-752-8b526-tertiary.svg";
 const imgPontoModerada2004 = "/assets/figma/503-752-32692.svg";
 const imgPontoGrave2004 = "/assets/figma/503-752-76503.svg";
 

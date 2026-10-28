@@ -38,6 +38,8 @@ Os estados interativos são preservados ao voltar a uma matéria. Ao mudar de p�
 
 As correções autorizadas são os destinos das páginas 10 e 11 no sumário e as três chamadas bibliográficas do editorial, da página 16 e da proposta da página 21 para “p. 22”. As outras chamadas para página 22 já vieram assim no novo arquivo. Não foram estimados ou adicionados dados editoriais.
 
+A cor terciária dos gráficos das páginas 08, 11 e 14 foi personalizada para `#063652`, a pedido do usuário. As cores principais foram preservadas; os valores sobre os segmentos azuis da página 08 usam texto claro para manter a leitura.
+
 `design/figma/` guarda a primeira extração; `design/figma-new/` guarda os novos contextos. `design/source-map.json` associa as páginas do site às fontes. A conversão para componentes e CSS local está em `scripts/prepare-figma.mjs`.
 
 ## Verificação
