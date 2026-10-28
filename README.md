@@ -40,6 +40,8 @@ As correções autorizadas são os destinos das páginas 10 e 11 no sumário e a
 
 A cor terciária dos gráficos das páginas 08, 11 e 14 foi personalizada para `#063652`, a pedido do usuário. As cores principais foram preservadas; os valores sobre os segmentos azuis da página 08 usam texto claro para manter a leitura.
 
+Na página 10, o gráfico “Figura 3 • Norte em 2024” foi removido a pedido do usuário. Os dois gráficos restantes foram centralizados sobre as colunas de texto, mantendo seus tamanhos, valores e legendas.
+
 `design/figma/` guarda a primeira extração; `design/figma-new/` guarda os novos contextos. `design/source-map.json` associa as páginas do site às fontes. A conversão para componentes e CSS local está em `scripts/prepare-figma.mjs`.
 
 ## Verificação
@@ -50,6 +52,6 @@ npm run verify:content
 npm run build
 ```
 
-As verificações cobrem a ordem das 22 páginas, os destinos do sumário, links diretos, enquadramento, assets locais e os números do gráfico anual. A auditoria de conteúdo compara os 520 blocos de texto do novo Figma com o HTML renderizado, considerando somente as três alterações bibliográficas autorizadas.
+As verificações cobrem a ordem das 22 páginas, os destinos do sumário, links diretos, enquadramento, assets locais e os números do gráfico anual. A auditoria de conteúdo compara os blocos de texto do novo Figma com o HTML renderizado, considerando as três alterações bibliográficas e a remoção da Figura 3 autorizadas pelo usuário.
 
 O navegador foi usado para verificar as 22 telas, suas imagens e o ajuste à tela, além dos estados interativos. Os arquivos raster foram decodificados e os SVGs validados. O teste não constitui uma nova revisão acadêmica independente das fontes citadas pela revista.

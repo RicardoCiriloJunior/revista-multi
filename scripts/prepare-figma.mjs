@@ -191,6 +191,31 @@ fs.writeFileSync('src/interaction-data.mjs', `// Exact variable assignments read
 const sourceMap = JSON.parse(fs.readFileSync('design/source-map.json', 'utf8'));
 for (const data of sourceMap) {
   let code = normalizePageRoot(source(data.source));
+  if (data.id === '196:739') {
+    // User-selected removal: Figure 3, "Norte em 2024". Keep the other two
+    // figures at their original sizes, centered over the two text columns.
+    code = replaceNode(code, '503:643', () => '');
+    code = replaceNode(code, '503:665', (_, block) => block.replace('left-[512px]', 'left-[164px]'));
+    code = replaceNode(code, '503:711', (_, block) => block.replace('left-[976px]', 'left-[860px]'));
+    // The source placed these six year labels at page level, over the chart
+    // heading. Reparent them into the historical chart above their own bars.
+    const yearLabels = [];
+    for (const [id, center, top] of [
+      ['722:575', 57.25, 128.25], ['722:576', 103.75, 111.09],
+      ['722:577', 150.25, 99.28], ['722:578', 196.75, 118.69],
+      ['722:579', 243.25, 101.25], ['722:580', 336.25, 109.41],
+    ]) {
+      code = replaceNode(code, id, (_, block) => {
+        const classes = `-translate-x-1/2 absolute font-['Archivo:SemiBold'] font-semibold h-[24px] leading-[11px] left-[${center}px] text-[#153b2e] text-[9px] text-center top-[${top}px] w-[44px]`;
+        yearLabels.push(block.replace(/className="[^"]*"/, `className="${classes}"`).replace(/(\d+,\d+%)\s*\/\s*(\d+,\d+%)/, '$1 /<br />$2'));
+        return '';
+      });
+    }
+    code = replaceNode(code, '503:665', (_, block) => {
+      const end = block.lastIndexOf('</div>');
+      return block.slice(0, end) + yearLabels.join('\n') + '\n' + block.slice(end);
+    });
+  }
   if (data.id === '196:760') code = code.replaceAll('#1d466b', `var(--chart-tertiary,${chartTertiary})`);
   if (data.id === '156:1021') code = code.replaceAll('bg-[var(--margem-cor-cinza,#67786b)]', `bg-[var(--chart-tertiary,${chartTertiary})]`);
   // These unchanged layouts were reused from the first extraction. The new
@@ -225,7 +250,7 @@ for (const data of sourceMap) {
       });
     }
   }
-  code = convert(code, data.currentNode);
+  code = convert(code, data.currentNode).replace(/^[\t ]+$/gm, '');
   const imports = `${names.length ? `import { ${names.join(', ')} } from '../interactive.jsx';\n` : ''}${data.id === '156:969' ? "import { annualData } from '../interaction-data.mjs';\n" : ''}`;
   const filename = `Page${data.id.replace(':', '_')}.tsx`;
   fs.writeFileSync(path.join(output, filename), `import React from 'react';\n${imports}\n${code}\n`);

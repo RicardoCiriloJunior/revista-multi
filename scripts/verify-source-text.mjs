@@ -20,8 +20,14 @@ function plain(html) {
   for (const [index,page] of verified.pages.entries()) {
     const Component = components[index];
     const rendered = normalize(plain(renderToStaticMarkup(React.createElement(InteractionProvider, null, React.createElement(Component)))));
-    const expectedTexts = ['503:511','503:1009','503:1115'].includes(page.id) ? page.texts.map(text => text.replaceAll('referências nas pp. 22–23.', 'referências na p. 22.').replaceAll('Referências completas nas pp. 22–23.', 'Referências completas na p. 22.')) : page.texts;
+    let expectedTexts = ['503:511','503:1009','503:1115'].includes(page.id) ? page.texts.map(text => text.replaceAll('referências nas pp. 22–23.', 'referências na p. 22.').replaceAll('Referências completas nas pp. 22–23.', 'Referências completas na p. 22.')) : page.texts;
+    if (page.id === '503:637') {
+      const removedStart = expectedTexts.indexOf('FIGURA 3 · NORTE · PNAD CONTÍNUA 2024');
+      const nextFigure = expectedTexts.indexOf('FIGURA 4 · NORTE · LEVANTAMENTOS 2004–2024');
+      if (removedStart < 0 || nextFigure <= removedStart) throw new Error('Could not identify the explicitly removed Figure 3 in the source audit.');
+      expectedTexts = [...expectedTexts.slice(0, removedStart), ...expectedTexts.slice(nextFigure)];
+    }
     const missing = expectedTexts.filter(text => !rendered.includes(normalize(text)));
     if (missing.length) { console.error(`${page.name}: missing original text: ${JSON.stringify(missing)}`); process.exitCode = 1; }
-    else console.log(`Verified ${page.name}: ${page.texts.length} original text layers.`);
+    else console.log(`Verified ${page.name}: ${expectedTexts.length} retained text layers.`);
   }
